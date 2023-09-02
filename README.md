@@ -34,8 +34,13 @@
    3.use state hook
    4.use effect hook
    5.use reduce hook
- 
-9.  manage state by reducer Hook
-   1. define reducer
-   2. update fetch data
-   3. get state from reducer
+
+9. manage state by reducer Hook
+   10. define reducer
+   11. update fetch data
+   12. get state from reducer
+
+13. add Bootstrap UI Framework
+   14. npm install react-bootstrap bootstrap
+   15. update app.js
+    3. npm install react-router-bootstrap to use linkContainer
