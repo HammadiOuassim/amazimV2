@@ -1,6 +1,6 @@
 import React from 'react';
 //import data from './data';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductSCreen from './screens/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';

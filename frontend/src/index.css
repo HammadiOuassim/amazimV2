@@ -12,11 +12,16 @@ body {
 main {
   flex: 1;
 }
-
+.btn-primary {
+  background-color: #f0c040;
+}
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.rating span {
+  color: gold;
 }
 .product {
   border: 1px #404040 solid;
