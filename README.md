@@ -35,16 +35,23 @@
    4.use effect hook
    5.use reduce hook
 
-9. manage state by reducer Hook 10. define reducer 11. update fetch data 12. get state from reducer
+9. manage state by reducer Hook
+
+   1. define reducer
+   2. update fetch data 12. get state from reducer
 
 10. add Bootstrap UI Framework
-11. npm install react-bootstrap bootstrap
-12. update app.js
-13. npm install react-router-bootstrap to use linkContainer
 
-14. babel-jest & jest was deleted from power/node_modules
+    1. npm install react-bootstrap bootstrap
+    2. update app.js
+    3. npm install react-router-bootstrap to use linkContainer
 
-15. create product and rating component
+11. babel-jest & jest was deleted from power/node_modules
+
+12. create product and rating component
     1. create rating component
     2. create product component
     3. use raating componenet in product component
+13. product details screen
+    1. fetch product from backend
+    2. create 3 columns for image , info and action
