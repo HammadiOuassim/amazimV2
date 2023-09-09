@@ -1,6 +1,6 @@
 import { createContext, useReducer } from 'react';
 import React from 'react';
-export const Store = createContext();
+export const Stire = createContext();
 
 const initialState = {
   cart: {
@@ -32,5 +32,5 @@ function reducer(state, action) {
 export function StoreProvider(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const value = { state, dispatch };
-  return <Store.Provider value={value}>{props.children}</Store.Provider>;
+  return <Stire.Provider value={value}>{props.children}</Stire.Provider>;
 }

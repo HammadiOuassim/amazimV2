@@ -10,6 +10,8 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Badge from 'react-bootstrap/Badge';
 import { useContext } from 'react';
 import { Store } from './Store';
+
+
 function App() {
   const { state } = useContext(Store);
   const { cart } = state;
@@ -27,13 +29,10 @@ function App() {
                 <Link to="/cart" className="nav-link">
                   Cart
                   {cart.cartItems.lenght > 0 && (
-                    
-
                     <Badge pill bg="danger">
-                    {cart.cartItems.length}
-                    {console.log(cart.cartItems.length)}
-                  </Badge>
-                  
+                      {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                      {console.log(cart.cartItems.length)}
+                    </Badge>
                   )}
                 </Link>
               </Nav>
