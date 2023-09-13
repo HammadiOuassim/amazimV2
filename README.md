@@ -71,6 +71,9 @@
     3. create store provider
     4. implement add to cart button click handler
 
-16. C. add to cart
-    1. check exist item in the cart
-    2. check count in stock in backend
+15.1. C. add to cart 1. check exist item in the cart 2. check count in stock in backend
+
+16. create cart screen
+    1. create 2 columns
+    2. display item list
+    3. create action column
