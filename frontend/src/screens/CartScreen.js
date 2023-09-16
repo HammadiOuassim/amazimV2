@@ -18,7 +18,7 @@ export default function CartScreen() {
   } = state;
 
   const updateCartHandler = async (item, quantity) => {
-    const { data } = await axios.get(`/api/products/${item.id}`);
+    const { data } = await axios.get(`/api/products/${item._id}`);
 
     if (data.countInStock < quantity) {
       window.alert('Product is out of stock');
@@ -36,7 +36,7 @@ export default function CartScreen() {
   };
 
   const chechkoutHandler = () => {
-    navigate('signin?redirect=/shipping');
+    navigate('/signin?redirect=/shipping');
   };
   return (
     <div>
@@ -93,7 +93,6 @@ export default function CartScreen() {
                       <Button
                         onClick={() => removeItemHandler(item)}
                         variant="light"
-                        //disabled={item.quantity === 1}
                       >
                         <i className="fas fa-trash"></i>
                       </Button>
@@ -120,7 +119,7 @@ export default function CartScreen() {
                     <Button
                       type="button"
                       variant="primary"
-                      onClick={() => chechkoutHandler()}
+                      onClick={ chechkoutHandler}
                       disabled={cartItems.lenght === 0}
                     >
                       Proceed to Checkout
