@@ -111,7 +111,8 @@ export default function CartScreen() {
                   <h3>
                     Total ({cartItems.reduce((a, c) => a + c.quantity, 0)}
                     {''}
-                    items) : ${cartItems.reduce((a, c) => a + c.price, 0)}
+                    items) : $
+                    {cartItems.reduce((a, c) => a + c.price * c.quantity, 0)}
                   </h3>
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -119,7 +120,7 @@ export default function CartScreen() {
                     <Button
                       type="button"
                       variant="primary"
-                      onClick={ chechkoutHandler}
+                      onClick={chechkoutHandler}
                       disabled={cartItems.lenght === 0}
                     >
                       Proceed to Checkout
